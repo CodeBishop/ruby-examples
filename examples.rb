@@ -16,4 +16,14 @@ def someFun
 end
 puts "someFun() returns #{someFun} because it's the last evaluated expression."
 
-print ""
+# Semicolons allow multiple statements.
+unless false; puts "Unless is opposite of if."; end
+
+# Until is opposite of while. This prints: 1 2 3
+i = 1
+until false  # Infinite loop.
+print i, ' '  # Indentation doesn't matter.
+  i += 1
+if i>3; break; end  # Break works like you would expect.
+end
+
